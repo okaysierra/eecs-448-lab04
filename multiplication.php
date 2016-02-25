@@ -4,6 +4,7 @@
     return $z;
   }
 
+  echo "<table style=width:100%>";
   for($i=1; $i <= 100; $i++)
   {
     echo "<tr>";
@@ -11,6 +12,7 @@
     {
       echo "<td>" . multiply($i,$j) . "</td>";
     }
-    echo "</tr>"
+    echo "</tr>";
   }
+  echo "</table>"
 ?>
