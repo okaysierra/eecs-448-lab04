@@ -19,7 +19,7 @@ function validate() {
       return false;
   }
   else if(z<0 || a<0 || b<0){
-    alert("Quantities must be greater or equal to zero");
+    alert("Quantities must be greater than or equal to zero");
     return false;
   }
   else if(c==null){
