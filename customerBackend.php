@@ -1,4 +1,4 @@
-<? php
+<?php
 
   $email = $_POST["email"];
   $password = $_POST["Password"];
@@ -30,7 +30,7 @@
   }
 
   echo "<div id = receipt>";
-  echo "You ordered:"<br>
+  echo "You ordered:<br>";
   echo "Plates with handpainted bird designs (set of four) x" . $plates . "-------> $". $plates*25 . "<br>";
   echo "Throw pillow with embossed bird design x" . $pillow . "-------------------> $". $pillow*15 . "<br>";
   echo "Tote bag with bird design x" . $tote . "----------------------------------> $". $tote*10 . "<br>";
