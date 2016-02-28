@@ -7,26 +7,26 @@
 
 <body>
 <h1> We put birds on things! </h1>
-<form name= "order" action="customerBackend.php" method="post" >
+<form name= "order" action="customerBackend.php" method="post" onsubmit="return validate();">
   <h2>User info</h2>
-  <input type="text" name="email" value="name@email.com">
-  <input type="text" name="password" value="password">
+  <input type="text" name="email" id="name" value="name@email.com">
+  <input type="text" name="password" id="password" value="password" required>
 
   <h2>Items with birds on them for you and your home:</h2><br><br>
 
   Plates with handpainted bird designs: $25.00 (set of four)<br>
-  Quantity: <input type="text" name="plates" value="0"><br><br>
+  Quantity: <input type="text" name="plates" id="plates" value="0" required><br><br>
 
   Throw pillow with embossed bird design: $15.00 ea <br>
-  Quantity: <input type="text" name="pillow" value="0"><br><br>
+  Quantity: <input type="text" name="pillow" id="pillow" value="0" required><br><br>
 
   Tote bag with bird design: $10.00 ea <br>
-  Quantity: <input type="text" name="tote" value="0"><br><br>
+  Quantity: <input type="text" name="tote" id="tote" value="0" required><br><br>
 
   <h2>Shipping options (choose one)</h2>
-  <input type="radio" name="shipping" value="0.00">Free 7 day<br><br>
-  <input type="radio" name="shipping" value="5.00">$5.00 three day<br><br>
-  <input type="radio" name="shipping" value="50.00">$50.00 overnight<br><br>
+  <input type="radio" name="shipping" value="0">Free 7 day<br><br>
+  <input type="radio" name="shipping" value="5">$5.00 three day<br><br>
+  <input type="radio" name="shipping" value="50">$50.00 overnight<br><br>
 
   <input type="submit" value="submit">
   <input type="reset" value="reset">
