@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script type="text/javscript" src="formChecker.js">
-  </script>
+<script type = "text/javascript" src = "formChecker.js">
+</script>
+<link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
+
 <h1> We put birds on things! </h1>
-<form name= "order" action="customerBackend.php" onsubmit = "validate()" method="post">
+<form name= "order" onsubmit = "return this.validate()" action="customerBackend.php" method="post">
   <h2>User info</h2>
   <input type="text" name="email" id="name" value="name@email.com">
-  <input type="text" name="password" id="password" value="password" required>
+  <input type="text" name="password" id="password" value="password" >
 
   <h2>Items with birds on them for you and your home:</h2><br><br>
   <img src = "resources/plates.png" width= "300px" /> <br><br>
   Plates with handpainted bird designs: $25.00 (set of four)<br>
-  Quantity: <input type="text" name="plates" id="plates" value="0" required><br><br>
+  Quantity: <input type="text" name="plates" id="plates" value="0" ><br><br>
 
   <img src = "resources/pillow.png" width = "300px" /> <br><br>
   Throw pillow with embossed bird design: $15.00 ea <br>
-  Quantity: <input type="text" name="pillow" id="pillow" value="0" required><br><br>
+  Quantity: <input type="text" name="pillow" id="pillow" value="0" ><br><br>
 
   <img src = "resources/tote.png" width = "300px" /> <br><br>
   Tote bag with bird design: $10.00 ea <br>
-  Quantity: <input type="text" name="tote" id="tote" value="0" required><br><br>
+  Quantity: <input type="text" name="tote" id="tote" value="0" ><br><br>
 
   <h2>Shipping options (choose one)</h2>
   <input type="radio" name="shipping" value="0">Free 7 day<br><br>

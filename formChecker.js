@@ -31,6 +31,7 @@ function validate() {
     return false;
   }
   else{
+    document.submit();
     return true;
   }
 }
