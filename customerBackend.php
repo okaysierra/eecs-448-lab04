@@ -1,5 +1,5 @@
 <?php
-  
+
   $email = $_POST["email"];
   $password = $_POST["password"];
   $plates = $_POST["plates"];
@@ -17,7 +17,7 @@
     $shipOpt=null;
     if($E == "0")
     {
-      $shipOpt = "Free";
+      $shipOpt = "Free      ";
     }
     else if($E == "5")
     {
@@ -35,7 +35,7 @@
   echo "Plates with handpainted bird designs (set of four) x" . $plates . " -------------- $". $plates*25.00 . "<br>";
   echo "Throw pillow with embossed bird design x" . $pillow . " ------------------------ $". $pillow*15.00 . "<br>";
   echo "Tote bag with bird design x" . $tote . " ------------------------------------------- $". $tote*10.00 . "<br>";
-  echo "Shipping type: " .shipping($shipping) . " ------------------------------------------- $". $shipping . "<br>";
+  echo "Shipping type: " .shipping($shipping) . " ----------------------------------------------------- $". $shipping . "<br>";
   echo "<b>total ------------------------------------------------------------------------ $". cost($plates, $pillow, $tote, $shipping) . "</b><br>";
   echo "</div>";
 

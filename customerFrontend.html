@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="style.css" rel="stylesheet" type="text/css"/>
 <script type = "text/javascript" src = "formChecker.js">
 </script>
-<link href="style.css" rel="stylesheet" type="text/css"/>
+
 </head>
 
 <body>
 
 <h1> We put birds on things! </h1>
+  <form name="order" action="customerBackend.php" onsubmit ="return validate()" method="post">
   <h2>User info</h2>
   <input type="text" name="email" id="name" value="name@email.com">
   <input type="text" name="password" id="password" value="password" >
@@ -27,7 +29,7 @@
   Quantity: <input type="text" name="tote" id="tote" value="0" ><br><br>
 
   <h2>Shipping options (choose one)</h2>
-  <input type="radio" name="shipping" value="0">Free 7 day<br><br>
+  <input type="radio" name="shipping" value="0" checked=true>Free 7 day<br><br>
   <input type="radio" name="shipping" value="5">$5.00 three day<br><br>
   <input type="radio" name="shipping" value="50">$50.00 overnight<br><br>
 

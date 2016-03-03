@@ -1,5 +1,5 @@
 function validate() {
-  var x = document.getElementById("email").value;
+ var x = document.getElementById("email").value;
   var y = document.getElementById("password").value;
   var z = document.getElementById("plates").value;
   var a = document.getElementById("pillow").value;
@@ -26,17 +26,8 @@ function validate() {
     window.alert("You must select a shipping option");
     return false;
   }
-  else if(emailcheck(x)!=true){
-    window.alert("Please enter a valid email address")
-    return false;
-  }
   else{
     document.submit();
     return true;
   }
-}
-
-function emailcheck(var email){
-  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-  return re.test(email);
 }
